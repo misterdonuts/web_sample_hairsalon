@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/earlyaccess/notosansjapanese.css");
+
+/* ------------------------------ reset css */
+
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+p {
+	color: #595758;
+	line-height: 30px;
+	margin: 50px 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.8;
+}
+
+* {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #fcf9eb;
+	font-family: Meiryo;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 960px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	position: relative;
+}
+
+header > img {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+header a {
+	color: #734339;
+	display: flex;
+}
+
+header a h1 {
+	font-size: 30px;
+	margin-left: 10px;
+	margin-top: 20px;
+	position: relative;
+	width: 300px;
+}
+
+header a h1::before {
+	color: #555;
+	content: "京都の学生向けオーガニックヘアサロンなら";
+	font-size: 12px;
+	position: absolute;
+	top: -18px;
+}
+
+header nav {
+	justify-content: end;
+	margin-top: 25px;
+}
+
+header nav ul {
+	display: flex;
+}
+
+header nav ul li {
+	margin-left: 23px;
+}
+
+header nav ul li a {
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 8px;
+}
+
+header nav ul li #nav-home {
+	border-bottom: 3px solid #345c39;
+	color: #345c39;
+	position: relative;
+}
+
+header nav ul li #nav-home::after {
+	-webkit-transform: translate(-50%, 0);
+	bottom: -10px;
+	content: url(../../images/navbar.png);
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, 0);
+}
+
+div#container {
+	margin-bottom: 15px;
+	margin-top: 30px;
+}
+
+div#container > img {
+	border: 5px solid white;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	height: auto;
+	margin-bottom: 15px;
+	width: 960px;
+}
+
+div#container div#info {
+	display: flex;
+	justify-content: space-between;
+}
+
+div#container div#info section#new {
+	background-color: white;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	padding: 10px;
+	width: 573px;
+}
+
+div#container div#info section#new h2 {
+	border-left: 3px solid #ba3009;
+	color: #734339;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding: 2px 8px;
+}
+
+div#container div#info section#new dl {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div#container div#info section#new dl dt {
+	color: #d3d2d2;
+	font-size: 12px;
+	width: 70px;
+}
+
+div#container div#info section#new dl dd {
+	color: #9a8885;
+	font-size: 13px;
+	width: 450px;
+}
+
+div#container div#info section#new dl dd,
+div#container div#info section#new dl dt {
+	height: 32px;
+	line-height: 32px;
+}
+
+div#container div#info section#new dl dd:not(:last-of-type),
+div#container div#info section#new dl dt:not(:last-of-type) {
+	border-bottom: dotted 1px #d0d0d0;
+}
+
+div#container div#info ul#menu li {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	margin-bottom: 20px;
+}
+
+div#container div#info ul#menu li > a {
+	position: relative;
+}
+
+div#container div#info ul#menu li > a > span {
+	color: #734339;
+	font-weight: bold;
+	left: 140px;
+	position: absolute;
+	top: -24px;
+}
+
+footer {
+	background-color: #345c39;
+	height: 55px;
+	width: 100%;
+}
+
+footer p {
+	color: white;
+	font-size: 12px;
+	line-height: 55px;
+	text-align: center;
+}
+
